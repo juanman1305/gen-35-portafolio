@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Alejandra Olazagasti">
+  <meta name="description" content="No more than 165 characters">
+  <meta name="keywords" content="keyword 1, keyword 2, keyword 3">
+  <meta name="theme-color" content="#09f">
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <title>Juan Cabrera's Portfolio</title>
+
+  <link rel="icon" href="./assets/img/logo.png" type="image/png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script type="module" src="./assets/js/main.js" defer></script>
+  
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <script type="text/javascript">
+    (function (){
+      emailjs.init({
+        publicKey:"X6pVO7KsrFpYCmIBy",
+      });
+    })();
+
+</script>
+
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar grid--container">
+      <a class="navbar__logo" href="#"><i class='bx bxs-registered'></i>Juan Cabrera</a>
+
+      <div id="nav" class="navbar__menu">
+        <a href="#close"><i class="bx bx-x btn__close navbar__icon"></i></a>
+
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a class="navbar__link active" href="#home">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#about">About Me</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#skills">Skills</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#projects">Portfolio</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar__toggles">
+        <div class="navbar__toggle--darkmode">
+          <input type="checkbox" id="darkmode-toggle" class="navbar__toggle--darkmode-input" />
+          <label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
+            <i class='bx bx-sun navbar__toggle--darkmode-sun'></i>
+            <i class='bx bx-moon navbar__toggle--darkmode-moon'></i>
+          </label>
+        </div>
+        <div class="navbar__toggle--language">
+          <input type="checkbox" id="language-toggle" checked class="navbar__toggle--language-input" />
+          <label for="language-toggle" class="navbar__toggle--language-label">
+        </div>
+      </div>
+      <a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="home">
+      <i class='bx bxl-html5 home__layer home__layer--1' data-speed="-5"></i>
+      <i class='bx bxl-javascript home__layer home__layer--2' data-speed="5"></i>
+      <i class='bx bxl-css3 home__layer home__layer--3' data-speed="2"></i>
+      <i class='bx bxl-nodejs home__layer home__layer--4' data-speed="6"></i>
+      <i class='bx bxl-react home__layer home__layer--5' data-speed="8"></i>
+      <i class='bx bxl-tailwind-css home__layer home__layer--6' data-speed="-2"></i>
+      <i class='bx bxl-redux home__layer home__layer--7' data-speed="4"></i>
+      <i class='bx bxl-typescript home__layer home__layer--8' data-speed="-2"></i>
+      <i class='bx bxl-git home__layer home__layer--9' data-speed="6"></i>
+      <i class='bx bxl-graphql home__layer home__layer--10' data-speed="-7"></i>
+      <i class='bx bx-code-alt home__layer home__layer--11' data-speed="-5"></i>
+      <div class="home__container grid--container">
+        <div class="home__image">
+          <span></span>
+          <img src="assets/img/profile.png" alt="profile photo" />
+        </div>
+
+        <ul class="home__social">
+          <li class="home__social-item">
+            <a class="home__social-link" href="https://www.linkedin.com/in/juan-manuel-c-70b3a785/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link" href="https://wa.me/12023026673?text=Hi%20I'm%20interested%20in%20your%20portafolio" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link" href="#"><i class='bx bxl-github'></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link" href="#"><i class='bx bx-envelope'></i></a>
+          </li>
+        </ul>
+
+        <div class="home__info">
+
+          <h1 class="home__title">Hi, I'm Juan Cabrera</h1>
+
+          <p class="home__description">
+            I'm a web developer, passionate about technology and programming.
+          </p>
+        </div>
+
+        <div class="home__buttons">
+          <button class="btn btn--primary" type="button">Download CV</button>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="about" class="about section">
+      <h2 class="section__title">About Me</h2>
+
+      <div class="about__container grid--container">
+        <p class="about__description">
+            Hi, I'm Juan Cabrera. My goal is to create efficient and creative solutions that make a difference. Thanks for exploring my work!
+        </p>
+
+        <div class="about__cards">
+          <!--Card 1
+
+ -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/me_1.jpg" alt="Working as an engineer">
+          </div>
+          <!--Card 2 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/me_2.jpg" alt="Working as a designer">
+          </div>
+          <!--Card 3 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/me_3.jpg" alt="Working in a team">
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section id="skills" class="skills section">
+      <h2 class="section__title">Skills</h2>
+
+      <div class="skills__container grid--container">
+        <p class="skills__description">
+            As a developer, I have experience in a variety of technologies and tools that allow me to create innovative and efficient web solutions. My key skills include:
+        </p>
+
+        <div class="skills__wrapper">
+          <div class="skills__cards">
+            <!--Card 1 -->
+            <input type="radio" name="slide" id="c1" checked class="skills__input">
+            <label for="c1" class="skills__card">
+              <div class="skills__card-row">
+                <i class="bx bxl-html5"></i>
+                <div class="skills__description">
+                  <h3 class="skills__card-title">HTML</h3>
+                  <p>As a fundamental language for building websites, my experience in HTML5 allows me to create solid and semantic structures that form the basis of an excellent user experience.</p>
+                </div>
+              </div>
+            </label>
+            <!--Card 2 -->
+            <input type="radio" name="slide" id="c2" checked class="skills__input">
+            <label for="c2" class="skills__card">
+              <div class="skills__card-row">
+                <i class="bx bxl-css3"></i>
+                <div class="skills__description">
+                  <h3 class="skills__card-title">CSS3</h3>
+                  <p>My skills in CSS3 allow me to design attractive and responsive interfaces, using modern design techniques like flexbox and grid to create elegant and adaptable layouts on different devices and screen sizes.</p>
+                </div>
+              </div>
+            </label>
+            <!--Card 3 -->
+            <input type="radio" name="slide" id="c3" checked class="skills__input">
+            <label for="c3" class="skills__card">
+              <div class="skills__card-row">
+                <i class="bx bxl-javascript"></i>
+                <div class="skills__description">
+                  <h3 class="skills__card-title">Javascript</h3>
+                  <p>With my deep knowledge of JavaScript, I can develop dynamic and functional interactions on both the frontend and backend of web applications, enhancing usability and interactivity.</p>
+                </div>
+              </div>
+            </label>
+            <!--Card 4 -->
+            <input type="radio" name="slide" id="c4" checked class="skills__input">
+            <label for="c4" class="skills__card">
+              <div class="skills__card-row">
+                <i class='bx bxl-react'></i>
+                <div class="skills__description">
+                  <h3 class="skills__card-title">React</h3>
+                  <p>As an expert in React, I can develop robust and scalable web applications, leveraging its powerful component system and focus on code reuse to build dynamic and high-performance user interfaces.</p>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="skills__tags">
+          <h3 class="skills__tags-title">Soft Skills</h3>
+          <div class="skills__tags-container">
+            <span class="skills__tag">Responsible</span>
+            <span class="skills__tag">Teamwork</span>
+            <span class="skills__tag">Creative</span>
+            <span class="skills__tag">Punctual</span>
+            <span class="skills__tag">Proactive</span>
+            <span class="skills__tag">Self-taught</span>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section">
+      <h2 class="section__title">Projects</h2>
+      <!-- PROJECT 1  -->
+      <div class="projects__container grid--container">
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/project1.jpg" alt="project 1" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Project 1</h3>
+              <p class="projects__description">
+                Creating a user interface
+              </p>
+
+              <div class="projects__buttons">
+                <button class="btn projects__button" type="button">
+                  VIEW DEMO
+                </button>
+                <button class="btn projects__button" type="button">
+                  VIEW CODE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PROJECT 2  -->
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/project2.png" alt="project 2" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Project 2</h3>
+              <p class="projects__description">
+                Web page optimization.
+              </p>
+
+              <div class="projects__buttons">
+                <button class="btn projects__button" type="button">
+                  VIEW DEMO
+                </button>
+                <button class="btn projects__button" type="button">
+                  VIEW CODE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PROJECT 3 -->
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/project3.jpg" alt="project 3" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Project 3</h3>
+              <p class="projects__description">
+                Website creation for job search.
+              </p>
+
+              <div class="projects__buttons">
+                <button class="btn projects__button" type="button">
+                  VIEW DEMO
+                </button>
+                <button class="btn projects__
+
+button" type="button">
+                  VIEW CODE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PROJECT 4  -->
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/project4.png" alt="project 4" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Project 4</h3>
+              <p class="projects__description">
+                Queries for SEO improvements
+              </p>
+
+              <div class="projects__buttons">
+                <button class="btn projects__button" type="button">
+                  VIEW DEMO
+                </button>
+                <button class="btn projects__button" type="button">
+                  VIEW CODE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <h2 class="section__title">Contact</h2>
+
+      <div class="contact__container grid--container">
+        <div class="contact__info">
+          <h3 class="contact__info-title">Contact Information</h3>
+          <p class="contact__info-description">
+            For inquiries and consultations, you can contact me:
+          </p>
+
+          <address class="contact__info-data">
+            <div class="contact__info-item">
+              <i class='bx bxl-whatsapp'></i>
+
+              <span class="contact__info-number">
+                <a href="https://wa.me/12023026673?text=Hi%20I'm%20interested%20in%20your%20portafolio" target="_blank">Send message to WhatsApp</a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bx-phone"></i>
+
+              <span class="contact__info-number">
+                <a href="tel:1-202-302-6673"> +1 202-302-6673 </a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bxs-envelope"></i>
+
+              <span class="contact__info-mail">
+                <a id="mail" href="mailto:Juanman.1305@gmail.com"> Juanman.1305@gmail.com </a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bx-map"></i>
+
+              <span class="contact__info-map"> Dominican Republic </span>
+            </div>
+          </address>
+        </div>
+
+        <div class="contact__form">
+          <h3 class="contact__form-title">Contact me directly: </h3>
+          <form id="form" class="contact__form-container">
+            <div class="contact__form-group">
+              <label for="name" class="contact__form-label">Name</label>
+              <input type="text" id="name" name="name" class="contact__form-input" autocomplete="given-name" required placeholder="Enter your name"/>
+            </div>
+
+            <div class="contact__form-group">
+              <label for="email" class="contact__form-label">Email</label>
+              <input type="email" id="email" name="email" class="contact__form-input" autocomplete="off" placeholder="Enter your email"/>
+            </div>
+
+            <div class="contact__form-group">
+              <label for="subject" class="contact__form-label">Subject</label>
+              <input type="text" id="subject" name="subject" class="contact__form-input" placeholder="Enter subject" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="message" class="contact__form-label">Message</label>
+              <textarea id="message" name="message" cols="30" rows="10" class="contact__form-input"></textarea>
+            </div>
+            <dialog id="modal">
+              Thank you for contacting me!
+              <button type="reset" id="btn_close-modal">Close</button>
+            </dialog>
+
+            <button type="submit" class="btn contact__form-button">
+              Send
+            </button>
+
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section">
+    <div class="footer__container grid--container">
+      <div class="footer__info">
+        <h3 class="footer__title">Juan Cabrera</h3>
+        <p class="footer__description">
+          I am a web developer, passionate about technology and
+          programming.
+        </p>
+      </div>
+
+      <div class="footer__social">
+        <h3 class="footer__title">Social Media</h3>
+
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.facebook.com/Dev.JuanCabrera/" target="_blank"><i class="bx bxl-facebook"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.instagram.com/juanman1305/" target="_blank"><i class="bx bxl-instagram"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://twitter.com/devjuancabrera" target="_blank"><i class="bx bxl-twitter"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.linkedin.com/in/juan-manuel-c-70b3a785/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer__copy"></p>
+  </footer>
+ 
+</body>
+
+</html>
